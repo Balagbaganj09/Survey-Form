@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+<link rel="stylesheet" href="style.css">
+</head>	
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 id="title" class="text-center">SURVEY FORM</h1>
+					<p id="description" class="text-center">Improve your coding skills at Free Code Camp</p>
+			</header>
+				<form id="survey-form">
+						<div class="form-group">
+							<label id="name-label" for="name">Name:</label>
+							<input 
+								type="text" 
+								id="name" 
+								name="name" 
+								class="form-control"
+								placeholder="Enter your name" 
+								required/><br>
+						</div>		
+						<div class="form-group">
+							<label id="email-label" for="email">Email:</label>
+							<input 
+								type="text" 
+								id="email" 
+								name="email"
+								class="form-control"
+								placeholder="Enter your email"
+								required/><br>
+						</div>
+						<div class="form-group">
+							<label id="number-label" for="number">Number<span class="clue">(optional)</span></label>
+							</label>
+							<input 
+								type="number" 
+								id="number" 
+								name="number"
+								min="0"
+								max="12"
+								class="form-control"
+								placeholder="Enter your number"/><br>
+						</div>
+						<div class="form-group">
+							<p>What is your course?</p>
+							<select							 
+								id="dropdown"
+								name="role"
+								class="form-control"
+								required>
+							<option disable selected value>Select your course</option>
+							<option value="website">Website Development</option>
+							<option value="network">Network Security</option>
+							<option value="enter">Enterprise Information Systems</option>
+							<option value="comp">Computer Science</option>
+							<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<p>Are you sure to your course that you choose?</p>
+							<label>
+								<input 
+									type="radio"
+									name="user-recommend"
+									value="definitely"
+									class="input-radio"/>Definitely
+							</label>
+							<label>
+								<input 
+									type="radio"
+									name="user-recommend"
+									value="maybe"
+									class="input-radio"/>Maybe
+							</label>
+							<label>
+								<input 
+									type="radio"
+									name="user-recommend"
+									value="not-sure"
+									class="input-radio"/>Not sure
+							</label>
+						</div>
+						<div class="form-group">
+							<p>Best explanation why Web Design is important?</p>
+							<select
+								id="most-like"
+								name="mostlike"
+								class="form-control"
+								required>
+							<option disabled selected value>Select your answer</option>
+							<option value="first">It sets the first Impression</option>
+							<option value="aids">It Aids your search engine optimization</option>
+							<option value="build">It builds trust with your audience</option>
+							<option value="your">Your Competitors are doing it</option>
+							<option value="create">It Creates Consistency</option>
+							<option value="any">Other</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<p>Best Element of quality Web Design<span class="clue">(check all that apply)</span></p>
+							<label>
+								<input 
+									name="quality"
+									value="solid"
+									type="checkbox"
+									class="input-checkbox"/>Solid Navigation
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="responsive"
+									type="checkbox"
+									class="input-checkbox"/>Responsive Design
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="unread"
+									type="checkbox"
+									class="input-checkbox"/>Unreadable Text/Un-clickable buttons
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="style"
+									type="checkbox"
+									class="input-checkbox"/>Style guide
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="no"
+									type="checkbox"
+									class="input-checkbox"/>No mobile Optimization
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="too"
+									type="checkbox"
+									class="input-checkbox"/>Too many cluttering Elements
+							</label><br>
+							<label>
+								<input 
+									name="quality"
+									value="purpose"
+									type="checkbox"
+									class="input-checkbox"/>Purposeful visuals
+							</label><br>
+						</div>
+						<div class="form-group">
+							<p>Any Comments or suggestions?</p>
+							<textarea 
+								id="comments"
+								class="input-textarea"
+								name="comment"
+								placeholder="Enter your comment here"></textarea>
+						</div>
+						<div class="form-group">
+							<button
+								type="submit"
+								id="submit"
+								class="submit-button">Submit</button>
+						</div>
+				</form>	
+	</body>	
+</html>
